@@ -14,13 +14,48 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      timetable: {
+        Row: {
+          class_level: number
+          created_at: string
+          day_of_week: number
+          id: string
+          slot_order: number
+          subject: string
+          teacher: string | null
+          time_slot: string
+          updated_at: string
+        }
+        Insert: {
+          class_level: number
+          created_at?: string
+          day_of_week: number
+          id?: string
+          slot_order?: number
+          subject: string
+          teacher?: string | null
+          time_slot: string
+          updated_at?: string
+        }
+        Update: {
+          class_level?: number
+          created_at?: string
+          day_of_week?: number
+          id?: string
+          slot_order?: number
+          subject?: string
+          teacher?: string | null
+          time_slot?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      is_admin: { Args: never; Returns: boolean }
     }
     Enums: {
       [_ in never]: never
