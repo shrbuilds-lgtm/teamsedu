@@ -2,8 +2,8 @@ export const SITE = {
   name: "TEAMS Tuition Center",
   shortName: "TEAMS",
   city: "Tumakuru",
-  phone: "+91 93415 51370",
-  whatsappNumber: "919341551370", // E.164 without + for wa.me
+  phone: "+91 70222 58154",
+  whatsappNumber: "917022258154", // E.164 without + for wa.me
   googleReviewsUrl:
     "https://www.google.com/search?q=TEAMS+Tuition+Center+Tumakuru+reviews",
   googleRating: 4.9,
