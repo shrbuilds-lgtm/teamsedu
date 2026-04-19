@@ -59,8 +59,8 @@ type Slot = {
   teacher: string | null;
 };
 
-const DAYS_SHORT = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-const DAYS_FULL = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const DAYS_SHORT = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+const DAYS_FULL = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 const SUBJECTS: Subject[] = ["Maths", "Physics", "Chemistry", "Biology", "Break", "Other"];
 
 const subjectClass: Record<Subject, string> = {
