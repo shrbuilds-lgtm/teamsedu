@@ -81,10 +81,10 @@ const subjectDot: Record<Subject, string> = {
   Other: "bg-subject-other",
 };
 
-// JS Sunday=0 → our Mon=1..Sat=6
+// JS Sunday=0 → our Mon=1..Sat=6, Sun=7
 const todayIndex = (() => {
   const d = new Date().getDay();
-  return d === 0 ? 0 : d; // 0 = Sunday (no class)
+  return d === 0 ? 7 : d;
 })();
 
 const Timetable = () => {
