@@ -80,7 +80,7 @@ const Contact = () => {
                 <span className="h-9 w-9 rounded-lg bg-primary-soft text-primary inline-flex items-center justify-center"><Clock className="h-4 w-4" /></span>
                 <div>
                   <div className="font-semibold">Hours</div>
-                  <div className="text-muted-foreground">Mon – Sat · Evenings</div>
+                  <div className="text-muted-foreground">Mon – Sun · Evenings</div>
                 </div>
               </li>
             </ul>
