@@ -119,3 +119,41 @@
     box-shadow: var(--shadow-card);
   }
 }
+
+/* Print: clean, ink-friendly timetable */
+@media print {
+  body {
+    background: white !important;
+  }
+  header,
+  footer,
+  nav,
+  [data-print-hide] {
+    display: none !important;
+  }
+  .print-area,
+  .print-area * {
+    visibility: visible;
+  }
+  .print-area {
+    position: absolute;
+    inset: 0;
+    padding: 1rem;
+  }
+  .shadow-card,
+  .shadow-soft {
+    box-shadow: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
