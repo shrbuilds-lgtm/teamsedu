@@ -56,7 +56,7 @@ export const Footer = () => (
     <div className="border-t border-border">
       <div className="container py-4 text-xs text-muted-foreground flex flex-col sm:flex-row justify-between gap-2">
         <span>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</span>
-        <span>Made with care in {SITE.city}.</span>
+        <span>Made with care in {SITE.city} by Srihari.</span>
       </div>
     </div>
   </footer>
