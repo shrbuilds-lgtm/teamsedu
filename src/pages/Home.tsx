@@ -80,7 +80,7 @@ const Home = () => {
               </div>
               <div className="mt-5 rounded-xl bg-amber-gradient text-accent-foreground p-4">
                 <div className="text-xs font-semibold uppercase tracking-wider opacity-80">Now enrolling</div>
-                <div className="font-display font-bold text-lg">Limited seats — 2024–25 batch</div>
+                <div className="font-display font-bold text-lg">Limited seats — 2026–27 batch</div>
               </div>
             </div>
           </div>
