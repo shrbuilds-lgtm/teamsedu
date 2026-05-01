@@ -28,7 +28,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === "development" && componentTagger(),
+    // mode === "development" && componentTagger(), // Disabled lovable tagger overlay
     copyRedirects(),
   ].filter(Boolean),
   resolve: {
