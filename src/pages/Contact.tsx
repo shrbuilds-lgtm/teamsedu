@@ -59,7 +59,11 @@ const Contact = () => {
                 <span className="h-9 w-9 rounded-lg bg-primary-soft text-primary inline-flex items-center justify-center"><MapPin className="h-4 w-4" /></span>
                 <div>
                   <div className="font-semibold">Address</div>
-                  <div className="text-muted-foreground">{SITE.city}, Karnataka, India</div>
+                  <div className="text-muted-foreground">
+                    Uppinakolaga Vokkaligara Hostel, 27, SIT Main Road,<br />
+                    Near Siddeswara Convention Hall, Siddalingaiahna Palya,<br />
+                    Tumakuru, Karnataka 572103
+                  </div>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -89,7 +93,7 @@ const Contact = () => {
           <div className="rounded-2xl border border-border bg-card overflow-hidden shadow-card">
             <iframe
               title="TEAMS Tuition Center location"
-              src="https://www.google.com/maps?q=Tumakuru,+Karnataka&output=embed"
+              src="https://www.google.com/maps?q=Uppinakolaga+Vokkaligara+Hostel,+27,+SIT+Main+Road,+Siddalingaiahna+Palya,+Tumakuru,+Karnataka+572103&output=embed"
               width="100%"
               height="280"
               loading="lazy"
