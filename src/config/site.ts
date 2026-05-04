@@ -10,7 +10,7 @@ export const SITE = {
   googleReviewCount: 81,
 };
 
-export const ADMIN_EMAIL = "srihariramesh2023@gmail.com";
+export const ADMIN_EMAIL = "shr.builds@gmail.com";
 
 export const buildWhatsAppLink = (message: string) =>
   `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(message)}`;
