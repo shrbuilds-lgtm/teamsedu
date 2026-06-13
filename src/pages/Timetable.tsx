@@ -215,7 +215,8 @@ const Timetable = () => {
     if (!deleteId) return;
     const { error } = await supabase.from("timetable").delete().eq("id", deleteId);
     if (error) {
-      toast.error(error.message);
+      console.error("Timetable delete error:", error);
+      toast.error("Could not delete slot. Please try again.");
     } else {
       toast.success("Deleted");
       fetchRows();
