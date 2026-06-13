@@ -106,7 +106,10 @@ const Timetable = () => {
       .order("class_level")
       .order("day_of_week")
       .order("slot_order");
-    if (error) toast.error(error.message);
+    if (error) {
+      console.error("Timetable fetch error:", error);
+      toast.error("Failed to load timetable. Please try again.");
+    }
     setRows((data ?? []) as Slot[]);
     setLoading(false);
   };
