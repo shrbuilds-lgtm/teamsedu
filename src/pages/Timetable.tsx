@@ -106,7 +106,10 @@ const Timetable = () => {
       .order("class_level")
       .order("day_of_week")
       .order("slot_order");
-    if (error) toast.error(error.message);
+    if (error) {
+      console.error("Timetable fetch error:", error);
+      toast.error("Failed to load timetable. Please try again.");
+    }
     setRows((data ?? []) as Slot[]);
     setLoading(false);
   };
@@ -199,7 +202,8 @@ const Timetable = () => {
       ? await supabase.from("timetable").update(payload).eq("id", editing.id)
       : await supabase.from("timetable").insert(payload);
     if (error) {
-      toast.error(error.message);
+      console.error("Timetable save error:", error);
+      toast.error("Could not save slot. Please check the details and try again.");
       return;
     }
     toast.success("Saved");
@@ -211,7 +215,8 @@ const Timetable = () => {
     if (!deleteId) return;
     const { error } = await supabase.from("timetable").delete().eq("id", deleteId);
     if (error) {
-      toast.error(error.message);
+      console.error("Timetable delete error:", error);
+      toast.error("Could not delete slot. Please try again.");
     } else {
       toast.success("Deleted");
       fetchRows();
