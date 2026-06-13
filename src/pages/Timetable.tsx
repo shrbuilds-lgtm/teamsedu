@@ -202,7 +202,8 @@ const Timetable = () => {
       ? await supabase.from("timetable").update(payload).eq("id", editing.id)
       : await supabase.from("timetable").insert(payload);
     if (error) {
-      toast.error(error.message);
+      console.error("Timetable save error:", error);
+      toast.error("Could not save slot. Please check the details and try again.");
       return;
     }
     toast.success("Saved");
